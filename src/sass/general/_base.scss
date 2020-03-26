@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &:focus{
+        outline: 3px solid palevioletred;
+    }
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+[hidden] {
+    display: none !important;
+}

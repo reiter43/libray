@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button class="btn btn-primary m20" id="first">Fade out first text</button>
+        <button class="btn btn-dark m20" data-count="second">Fade out second text</button>
+        <button class="btn btn-warning m20">Fade out all texts</button>
+
+        <!-- Dropdown menu -->
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
+            <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Action #2</a>
+                <a href="#" class="dropdown-item">Action #3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton2">Dropdown button</button>
+            <div class="dropdown-menu" data-toggle-id="dropdownMenuButton2">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Action #2</a>
+                <a href="#" class="dropdown-item">Action #3</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button id="dropdown-btn" class="btn btn-primary dropdown__btn" aria-haspopup="true" aria-controls="dropdown-list">
+                WAI-ARIA Quick Links
+            </button>
+            <ul id="dropdown-list" class="dropdown__list" role="menu" aria-labelledby="dropdown-btn">
+                <li role="none">
+                    <a class="dropdown__item" tabindex="-1" role="menuitem" href="https://www.w3.org/">
+                        W3C Home Page
+                    </a>
+                </li>
+                <li role="none">
+                    <a class="dropdown__item" tabindex="-1" role="menuitem" href="https://www.w3.org/standards/webdesign/accessibility">
+                        W3C Web Accessibility Initiative
+                    </a>
+                </li>
+                <li role="none">
+                    <a class="dropdown__item" tabindex="-1" role="menuitem" href="https://www.w3.org/TR/wai-aria/">
+                        Accessible Rich Internet Application Specification
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown-act">
+            <button id="dropdown-act-btn" class="btn btn-primary dropdown-act__btn" aria-haspopup="listbox">
+                Actions
+            </button>
+            <ul id="dropdown-act-list" class="dropdown__list" role="listbox">
+                <li role="none">
+                    <button class="dropdown-act__item" tabindex="-1" role="option">
+                        Action1
+                    </button>
+                </li>
+                <li role="none">
+                    <button class="dropdown-act__item" tabindex="-1" role="option">
+                        Action2
+                    </button>
+                </li>
+                <li role="none">
+                    <button class="dropdown-act__item" tabindex="-1" role="option">
+                        Action3
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Card -->
+
+        <div class="goods d-flex f-space-around">
+            <div class="card">
+                <img class="card-img" src="https://www.apple.com/newsroom/images/product/iphone/lifestyle/Apple_Shot-on-iPhone-Challenge-2020_Austin-Mann_01072020_big.jpg.large.jpg" alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card title</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://www.apple.com/newsroom/images/product/iphone/lifestyle/Apple_Shot-on-iPhone-Challenge-2020_Austin-Mann_01072020_big.jpg.large.jpg" alt="photo">
+                <div class="card-body">
+                    <div class="card-title">Card title #2</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia itaque placeat qui suscipit.</p>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <!-- <div class="modal" id="exampleModal">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modal__title">
+                            Modal title
+                        </div>
+                    </div>
+                    <div class="moda__-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus doloremque nesciunt enim rem quam corporis? Dolorem pariatur magnam distinctio perferendis. Ratione dolorem voluptates iusto facilis odit veritatis, suscipit voluptatibus!
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="exampleModal2">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal__header">
+                        <div class="modal__title">
+                            Modal title #2
+                        </div>
+                    </div>
+                    <div class="modal__body">
+                        Lorem ipsum dolor sit
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn-danger" data-close>Close</button>
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Reter-modal -->
+        <hr>
+        <button class="trigger">Открыть модальное окно</button>
+
+        <div class="modal" id="modal" role="dialog" aria-labelledby="modal__title" aria-modal="true" aria-label="Модальное окно...">
+            <div class="modal__dialog">
+                <button type="button" class="btn-close modal__btn-close" tabindex="0" data-close-modal aria-label="Закрыть окно"><span></span></button>
+                <div class="modal__content">
+                    <h2 class="modal__title-modal" id="modal__title">
+                        Modal title
+                    </h2>
+                    <div class="modal__body">
+                        <form id="form--modal" class="form form--modal" aria-labelledby="form__title--modal">
+                            <h3 id="form__title--modal" class="form__title form__title--modal">Оставить заявку</h3>
+                            <div class="form__block1">
+                                <label for="form__tel--modal" class="visually-hidden">Телефон</label>
+                                <input id="form__tel--modal" type="tel" class="form-elem form-elem--modal" name="Телефон" placeholder="Телефон" tabindex="0" required>
+
+                                <label for="form__email--modal" class="visually-hidden">Электронная почта</label>
+                                <input id="form__email--modal" type="email" class="form-elem form-elem--modal" name="Электронная почта" placeholder="Электронная почта" tabindex="0" required>
+
+                                <label for="form__email--comments" class="visually-hidden">Комментарий</label>
+                                <textarea id="form__email--comments" class="form-elem form-elem--modal form-elem--comments" name="Комментарий" placeholder="Комментарий к заказу" tabindex="0"></textarea>
+
+                                <button class="btn-base btn-base--form modal__btn-submit" tabindex="0">
+                                    <span class="btn-base__content">
+                                        <span>Отправить заявку</span>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn btn-danger" tabindex="0" data-close-modal>Close</button>
+                        <button class="btn btn-success" tabindex="0">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Tabs -->
+
+        <div class="tab">
+            <ul class="tab__list" data-tabpanel role="tablist" aria-label="Категории" aria-orientation="horisontal">
+                <li class="tab__item active" role="tab" tabindex="0" aria-controls="tab__panel1" aria-selected="true">Content 1</li>
+                <li class="tab__item" role="tab" tabindex="0" aria-controls="tab__panel2" aria-selected="false">Content 2</li>
+                <li class="tab__item" role="tab" tabindex="0" aria-controls="tab__panel3" aria-selected="false">Content 3</li>
+            </ul>
+            <div class="tab__content">
+                <div id="tab__panel1" class="tab__panel" role="tabpanel">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat laboriosam blanditiis omnis? Ab molestias tempora beatae ex itaque cumque, velit modi, molestiae debitis earum dolor quae quis. Ipsum, omnis voluptatem!
+                    <br> <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates ipsum delectus vitae similique earum veniam? Odit soluta quibusdam laudantium molestias perferendis ad voluptates, earum ea deserunt architecto provident ipsum.
+                </div>
+                <div id="tab__panel2" class="tab__panel" hidden role="tabpanel">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat laboriosam blanditiis omnis? Ab molestias tempora beatae ex itaque cumque, velit modi, molestiae debitis earum dolor quae quis. Ipsum, omnis voluptatem!
+                    <br> <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates ipsum delectus vitae similique earum veniam? Odit soluta quibusdam laudantium molestias perferendis ad voluptates, earum ea deserunt architecto provident ipsum.
+                    <br> <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet voluptates ipsum delectus vitae similique earum veniam? Odit soluta quibusdam laudantium molestias perferendis ad voluptates, earum ea deserunt architecto provident ipsum.
+                </div>
+                <div id="tab__panel3" class="tab__panel" hidden role="tabpanel">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat laboriosam blanditiis omnis? Ab molestias tempora beatae ex itaque cumque, velit modi, molestiae debitis earum dolor quae quis. Ipsum, omnis voluptatem!
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Checkbox -->
+        <label class="checkbox">
+            <input class="checkbox__input" type="checkbox" name="Рассылка" aria-checked="false">
+            <span class="checkbox__fake"></span>
+            Кастомный чекбокс
+        </label>
+
+        <hr>
+
+        <!-- Accordion -->
+
+        <div class="accordion">
+            <div class="accordion__head" id="accordion-bar1" tabindex="0" aria-expanded="false" aria-controls="accordion-panel1">
+                <span>Первый элемент аккордеона</span>
+            </div>
+            <div class="accordion__content" id="accordion-panel1" role="region" aria-labelledby="accordion-bar1">
+                <p class="accordion__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                </p>
+            </div>
+            <div class="accordion__head" id="accordion-bar2" tabindex="0" aria-expanded="false" aria-controls="accordion-panel2">
+                <span>Второй элемент аккордеона</span>
+            </div>
+            <div class="accordion__content" id="accordion-panel2" role="region" aria-labelledby="accordion-bar2">
+                <p class="accordion__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptatibus fuga est cupiditate debitis harum repudiandae modi quia. Enim nobis recusandae totam error veniam quod consequatur nulla, debitis mollitia laborum!
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+
+
+    <script src='script.js'></script>
+</body>
+
+</html>
